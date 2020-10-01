@@ -1,0 +1,71 @@
+.hero{
+   position: relative;
+   width: 100%;
+   height: 100vh;
+
+   &__boxes{
+      position: relative;
+      width: 1550px;
+      height: 1025px;
+      
+      .box{
+         position: absolute;
+      }
+
+      .box--1{
+         width: 340px;
+         height: 350px;
+         background-color: $pink-dark-1;
+         bottom: 0;
+         z-index: 2;
+      }
+
+      .box--2{
+         width: 460px;
+         height: 490px;
+         background-color: $pink-dark-2;
+         left: 300px;
+         bottom: 50px;
+      }
+
+      .box--3{
+         width: 310px;
+         height: 185px;
+         background-color: $pink-light-1;
+         left: 640px;
+         bottom: 0px;
+      }
+
+      .box--4{
+         width: 535px;
+         height: 730px;
+         background-color: $olive;
+         left: 50%;
+         transform: translateX(-50%);
+         z-index: -1;
+      }
+
+      .box--5{
+         width: 500px;
+         height: 500px;
+         right: 160px;
+         background-color: $coral;
+      }
+
+      .box--6{
+         width: 260px;
+         height: 560px;
+         background-color: $pink-dark-1;
+         right: 280px;
+         bottom: 105px;
+      }
+
+      .box--7{
+         width: 450px;
+         height: 240px;
+         background-color: $pink-dark-2;
+         right: 0;
+         bottom: 20px;
+      }
+   }
+}

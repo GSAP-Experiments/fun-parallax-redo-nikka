@@ -1,0 +1,82 @@
+// CTA
+.cta{
+    position: relative;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    background-color:none;
+    background: none; 
+    color: #fff;
+}
+
+   .cta--large{
+      width: 165px;
+      height: 165px;
+      position: absolute;
+      top: 0;
+      left: 0;
+   }
+
+   .cta--large-1{
+      transform: scale(0.2);
+      opacity: 0;
+   } 
+   
+   .cta-circle-wrapper{
+      position: absolute;
+      bottom: 90px;
+      left: 50%;
+      transform: translateX(-50px);
+      height: 165px;
+      cursor: pointer;
+      // position: relative;
+      // margin: 0 auto;
+  
+      &:hover .cta--large-2{
+         animation: circle-outer 0.85s ease-out;
+         // border-color: red;
+      }
+      
+      &:hover .cta--large-1{
+         animation: circle-inner 0.5s ease-in;
+         
+      }
+  
+}
+
+
+
+
+
+
+@keyframes circle-outer{
+  0%{
+    // transform-origin: 0% 50%;
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.7);
+    // transform-origin: 0% 50%;
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+@keyframes circle-inner{
+  0%{
+    opacity: 1;
+    transform: scale(0);
+  }
+  50%{
+    opacity: 1;
+    transform: scale(1.5);
+   //  transform: scale(1);
+  }
+  100%{
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
